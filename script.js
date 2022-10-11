@@ -1,6 +1,5 @@
 class RPS {
    gameChoiceBtn = document.querySelectorAll('.user-btn')
-   winner = document.querySelector('#winner')
    history = document.querySelector('.history')
    rstBtn = document.querySelector('.rst-btn')
    userSpan = document.querySelector('#user')
@@ -14,7 +13,8 @@ class RPS {
 	  this.userScore = 0
 	  this.compScore = 0
 	  this.index = 0
-	  this.winner.textContent = 'Your score 0 : 0 Computer score'
+	  this.aiSpan.textContent = '0'
+	  this.userSpan.textContent = '0'
 	  this.history.innerHTML = ''
    }
 
