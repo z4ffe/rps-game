@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: rgb(137, 137, 153) 4px 5px;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  color: whitesmoke;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid whitesmoke;
+  width: 85%;
+  height: 97%;
+  position: relative;
+}
+.wrapper h1 {
+  margin: 50px auto 0;
+}
+.wrapper h2 {
+  margin: 40px auto 20px;
+}
+.wrapper h3 {
+  margin: 0 auto 10px;
+}
+.wrapper .buttons {
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  width: 40%;
+  gap: 15px;
+}
+.wrapper .buttons button {
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 55px;
+  font-size: 30px;
+  background-color: #86A8E7;
+  min-width: 100px;
+  transition: 0.4s ease-out;
+}
+.wrapper .buttons button:hover {
+  transform: scale(105%);
+}
+.wrapper .buttons button:active {
+  transform: scale(95%);
+  background-color: gray;
+}
+.wrapper .history {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 10px;
+  width: 40%;
+  max-height: 53%;
+  overflow: scroll;
+  background: linear-gradient(rgba(231, 231, 231, 0.1), rgba(231, 231, 231, 0));
+}
+.wrapper .history div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 auto 10px;
+  width: 100%;
+  background: rgba(231, 231, 231, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.0509804);
+  border-radius: 5px;
+  height: 40px;
+  min-width: 100%;
+  border: none;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wrapper .history div p {
+  margin-left: 10px;
+}
+.wrapper .history div span {
+  margin-right: 10px;
+}
+.wrapper .rst-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 42%;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: #D16BA5;
+  min-width: 100px;
+  transition: 0.4s ease-out;
+}
+.wrapper .rst-btn:hover {
+  transform: scale(105%);
+}
+.wrapper .rst-btn:active {
+  transform: scale(95%);
+  background-color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
