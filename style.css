@@ -22,7 +22,7 @@ body {
   border-bottom: 1px solid whitesmoke;
   width: 85%;
   height: 97%;
-  position: relative;
+  padding-bottom: 15px;
 }
 .wrapper h1 {
   margin: 50px auto 0;
@@ -50,7 +50,6 @@ body {
   display: flex;
   margin: 10px auto;
   justify-content: space-between;
-  width: 40%;
   gap: 15px;
 }
 .wrapper .buttons button {
@@ -76,9 +75,9 @@ body {
 .wrapper .history {
   display: flex;
   flex-direction: column;
-  margin: 10px auto 10px;
-  width: 40%;
-  max-height: 53%;
+  margin: 10px auto 15px;
+  width: 485px;
+  height: 90%;
   overflow: scroll;
   background: linear-gradient(rgba(231, 231, 231, 0.1), rgba(231, 231, 231, 0));
 }
@@ -86,13 +85,12 @@ body {
   display: flex;
   justify-content: space-between;
   color: white;
-  margin: 0 auto 10px;
   width: 100%;
+  margin: 0 auto 10px;
   background: rgba(231, 231, 231, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.0509804);
   border-radius: 5px;
   height: 40px;
-  min-width: 100%;
   border: none;
   padding-left: 5px;
   padding-top: 10px;
@@ -106,9 +104,7 @@ body {
   margin-right: 10px;
 }
 .wrapper .rst-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 42%;
+  margin: 0 auto;
   border-radius: 5px;
   border: none;
   width: 150px;
@@ -128,6 +124,35 @@ body {
 .wrapper .rst-btn:active {
   transform: scale(95%);
   background-color: gray;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+  .wrapper h1 {
+    font-size: 25px;
+  }
+  .wrapper .score {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .score__player {
+    width: 100%;
+  }
+  .wrapper .score .score__computer {
+    width: 200px;
+  }
+  .wrapper .buttons {
+    flex-direction: column;
+  }
+  .wrapper .history {
+    width: 220px;
+  }
+  .wrapper .history div {
+    width: 100%;
+  }
+  .wrapper .history span {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

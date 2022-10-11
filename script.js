@@ -16,6 +16,7 @@ class RPS {
 	  this.aiSpan.textContent = '0'
 	  this.userSpan.textContent = '0'
 	  this.history.innerHTML = ''
+	  this.winrate.textContent = '0%'
    }
 
    #time() {
@@ -54,14 +55,14 @@ class RPS {
 			this.userScore++
 			break
 	  }
-	  this.index++
+	  if (userChoice !== compChoice) this.index++
 	  this.#render(userChoice, compChoice)
    }
 
    #render(userChoice, compChoice) {
 	  this.userSpan.textContent = this.userScore.toString()
 	  this.aiSpan.textContent = this.compScore.toString()
-	  this.winrate.textContent = `${(this.userScore / this.index * 100).toString().slice(0, 2)}%`
+	  if (this.userScore) this.winrate.textContent = `${(this.userScore / this.index * 100).toString().slice(0, 2)}%`
 	  this.history.insertAdjacentHTML('afterbegin', `<div><p>&#10095; user ${this.#names(userChoice)} &#9876; comp ${this.#names(compChoice)}</p><span>${this.#time()}</span></div>`)
    }
 
