@@ -105,6 +105,7 @@ body {
       font-weight: 400;
 
       p {
+        height: 40px;
         margin-left: 10px;
       }
 
@@ -142,8 +143,10 @@ body {
 
 @media only screen and (min-width: 390px) and (max-width: 767px) {
   .wrapper {
+    height: 81%;
     h1 {
       font-size: 25px;
+      margin: 15px auto 0;
     }
 
     .score {
@@ -165,11 +168,17 @@ body {
     }
 
     .history {
-      width: 220px;
+      width: 240px;
+      height: 6%;
+      overflow: hidden;
 
       div {
         width: 100%;
+        p{
+          height: 37px;
+        }
       }
+
 
       span {
         display: none;

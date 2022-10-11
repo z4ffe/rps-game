@@ -98,6 +98,7 @@ body {
   font-weight: 400;
 }
 .wrapper .history div p {
+  height: 40px;
   margin-left: 10px;
 }
 .wrapper .history div span {
@@ -127,8 +128,12 @@ body {
 }
 
 @media only screen and (min-width: 390px) and (max-width: 767px) {
+  .wrapper {
+    height: 81%;
+  }
   .wrapper h1 {
     font-size: 25px;
+    margin: 15px auto 0;
   }
   .wrapper .score {
     text-align: center;
@@ -145,10 +150,15 @@ body {
     flex-direction: column;
   }
   .wrapper .history {
-    width: 220px;
+    width: 240px;
+    height: 6%;
+    overflow: hidden;
   }
   .wrapper .history div {
     width: 100%;
+  }
+  .wrapper .history div p {
+    height: 37px;
   }
   .wrapper .history span {
     display: none;
